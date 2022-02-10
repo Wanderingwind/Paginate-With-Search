@@ -1,0 +1,314 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background-color: #f5f6f9;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: 0 0;
+  color: #2b2b2b;
+  transition: all 0.3s;
+}
+.navbar.compressed {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #fff;
+  color: #2b2b2b;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.navbar.compressed .nav-item a {
+  color: #332e3d;
+}
+.navbar.compressed .nav-item a:hover {
+  color: #3c2964;
+}
+.nav-item a {
+  color: #ececec;
+}
+.nav-item a:hover {
+  color: #79d0f1;
+}
+.navbar.compressed a.icba-logo-white,
+a.sidenav a.icba-logo {
+  display: block;
+  text-indent: -9999px;
+  /* width: 151px; */
+  height: 50px;
+  margin: 13px 0;
+  background: url(https://www.icba.org/images/default-source/events/convention--icba-live/2022/icba-logo-blue.png);
+  background-repeat: repeat;
+  background-size: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+a.icba-logo-white,
+a.sidenav a.icba-logo {
+  display: block;
+  text-indent: -9999px;
+  /* width: 151px; */
+  height: 50px;
+  margin: 13px 0;
+  background: url(https://www.icba.org/images/default-source/events/convention--icba-live/2022/icba-logo-white.png?sfvrsn=d0ce0a17_2);
+  background-repeat: repeat;
+  background-size: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.navbar-toggler {
+  color: #fff !important;
+}
+.navbar.compressed .navbar-toggler {
+  color: rgb(34, 34, 34) !important;
+}
+main {
+  margin-top: 0;
+  padding-top: 50px;
+}
+.bancard-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+/* BANCARD  */
+/* IE MEDIA QUERY */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .panel h1 {
+    line-height: 1.1;
+    font-size: 3rem;
+  }
+  .swiper-bleed {
+    display: none;
+  }
+  .bancard-panel-dark .pb-7 {
+    padding-bottom: 4.5em;
+  }
+  .bancard-card-img-top {
+    min-height: 1px;
+  }
+}
+@supports not (-ms-high-contrast: none) {
+  .show-on-ie {
+    display: none;
+  }
+}
+
+body {
+  background-color: #f5f6f9;
+}
+.bancard-blue-bg {
+  background: hsl(214, 77%, 30%);
+}
+/* SPACING EXTENSIONS */
+.py-6 {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+.pt-6 {
+  padding-top: 6em;
+}
+.pb-6 {
+  padding-bottom: 6em;
+}
+.py-7 {
+  padding-top: 7em;
+  padding-bottom: 7em;
+}
+.px-7 {
+  padding-left: 7em;
+  padding-right: 7em;
+}
+.pt-7 {
+  padding-top: 7em;
+}
+.pb-7 {
+  padding-bottom: 7em;
+}
+.my-6 {
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+.mt-6 {
+  margin-top: 6em;
+}
+.mb-6 {
+  margin-bottom: 6em;
+}
+.my-7 {
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+.mt-7 {
+  margin-top: 7em;
+}
+.mb-7 {
+  margin-bottom: 7em;
+}
+.font-larger {
+  font-size: 1.3rem;
+}
+.font-largest {
+  font-size: 1.5rem;
+}
+.border-radius-xl {
+  border-radius: 1em;
+}
+
+/* BANCARD CARDS AND ARROW  */
+.bancard-card {
+  transition: 0.3s;
+  box-shadow: 0px 1px 20px rgb(0 0 0 / 16%);
+  border-radius: 8px;
+  height: 100%;
+  background: hsl(0, 0%, 98%);
+}
+.bancard-card:hover {
+  transform: translateY(-4px);
+}
+.bancard-card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bancard-card .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 300;
+}
+.bancard-card .card-text p,
+.date-in-list {
+  margin-bottom: 0;
+}
+
+.fa-angle-right a.hover {
+  margin-left: 10px;
+}
+
+.min-200 {
+  min-height: 130px;
+}
+.bancard-card.min-200 h4 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+.bancard-card.min-200 p {
+  font-weight: 300;
+  font-size: 16px;
+}
+.bancard-news-block {
+  padding: 1.3rem;
+}
+.bancard-news-block p {
+  font-weight: 300;
+}
+.bancard-news-block h4 {
+  margin-bottom: 5px;
+}
+.bancard-news-block .text-muted {
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+/* Purple Arrow  */
+.bancard-card .purple-arrow {
+  margin-top: 15px;
+}
+.purple-arrow {
+  display: inline-block;
+  color: hsla(260, 60%, 65%, 1);
+  z-index: 5;
+  position: relative;
+}
+.purple-arrow::after {
+  transform: translateX(0);
+  font-family: "Font Awesome 5 Free";
+  font-size: 0.8rem;
+  font-weight: 900;
+  content: "\f054";
+  padding-left: 4px;
+  color: hsla(285, 50%, 39%, 1);
+}
+.purple-arrow:hover::after {
+  display: inline-block;
+  transform: translateX(3px);
+  transition-duration: 0.3s;
+  color: hsla(285, 50%, 39%, 1);
+}
+.purple-arrow:hover {
+  text-decoration: none;
+  color: hsla(285, 50%, 39%, 1);
+}
+.grid-6 .with-borders:nth-of-type(1) {
+  border-bottom: 2px solid hsl(260, 8%, 92%);
+  border-right: 2px solid hsl(260, 8%, 92%);
+}
+.grid-6 .with-borders:nth-of-type(2) {
+  border-bottom: 2px solid hsl(260, 8%, 92%);
+  border-right: 2px solid hsl(260, 8%, 92%);
+}
+.grid-6 .with-borders:nth-of-type(3) {
+  border-bottom: 2px solid hsl(260, 8%, 92%);
+}
+.grid-6 .with-borders:nth-of-type(4) {
+  border-right: 2px solid hsl(260, 8%, 92%);
+}
+.grid-6 .with-borders:nth-of-type(5) {
+  border-right: 2px solid hsl(260, 8%, 92%);
+}
+@media (min-width: 768px) {
+  .px-md-6 {
+    padding-right: 6rem !important;
+    padding-left: 6rem !important;
+  }
+  .px-md-7 {
+    padding-right: 7rem !important;
+    padding-left: 7rem !important;
+  }
+  .flex-image {
+    margin-right: 0;
+  }
+}
+.mt-15 {
+  margin-top: 15em;
+}
+@media (min-width: 992px) {
+  .px-lg-6 {
+    padding-right: 6rem !important;
+    padding-left: 6rem !important;
+  }
+  .px-lg-7 {
+    padding-right: 7rem !important;
+    padding-left: 7rem !important;
+  }
+  .flex-image {
+    margin-right: -6%;
+  }
+}
+@media (min-width: 1199.98px) {
+  .px-xl-6 {
+    padding-right: 6rem !important;
+    padding-left: 6rem !important;
+  }
+  .px-xl-7 {
+    padding-right: 7rem !important;
+    padding-left: 7rem !important;
+  }
+  .px-xl-8 {
+    padding-right: 8rem !important;
+    padding-left: 8rem !important;
+  }
+  .flex-image {
+    margin-right: -26%;
+  }
+}
